@@ -28,6 +28,7 @@ yabai -m rule --add app="^Proton VPN$" sticky=off manage=off
 yabai -m rule --add app="^Raycast$" sticky=off manage=off
 yabai -m rule --add app="^OrbStack$" sticky=off manage=off
 yabai -m rule --add app="^qemu-system-aarch64$" sticky=off manage=off
+yabai -m rule --add app="^Cleanshot$" sticky=off manage=off
 
 # global settings
 yabai -m config \

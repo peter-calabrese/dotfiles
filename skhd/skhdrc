@@ -1,12 +1,6 @@
-alt - h : yabai -m window --focus west
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - l : yabai -m window --focus east
-
 alt - e : yabai -m space --balance
-
-alt - n : yabai -m space --create
-alt - d : yabai -m space --destroy
+alt + cmd - s : yabai -m space --create
+alt + cmd + shift - s : yabai -m space --destroy
 
 alt - 1 : yabai -m space --focus 1
 alt - 2 : yabai -m space --focus 2
@@ -28,3 +22,24 @@ alt - f : yabai -m window --toggle zoom-fullscreen
 alt - m : yabai -m window --toggle zoom-parent
 
 shift + alt - r : yabai --restart-service
+
+# focus window
+alt - z : yabai -m window --focus prev
+alt - x : yabai -m window --focus next
+
+# move managed window
+alt - w : yabai -m window --warp north
+alt - a : yabai -m window --warp west
+alt - s : yabai -m window --warp south
+alt - d : yabai -m window --warp east
+
+# resize windows
+alt - j : yabai -m window --resize left:-50:0; \
+                  yaba®i -m window --resize right:-50:0
+alt - k : yabai -m window --resize bottom:0:50; \
+                  yabai -m window --resize top:0:50ø
+alt - i : yabai -m window --resize top:0:-50; \
+                  yabai -m window --resize bottom:0:-50
+alt - l : yabai -m window --resize right:50:0; \
+                  yabai -m window --resize left:50:0
+
